@@ -1,0 +1,56 @@
+.accroche {
+    background-image: url('img/ismael.png');
+    background-size: cover;
+    height: 110vh;
+    padding: auto;
+
+    .preparation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $clr-primary;
+        opacity: .9;
+        width: 500px;
+        height: 550px;
+        gap: 50px;
+        margin: auto;
+        margin-right: 80px;
+        padding: 40px;
+
+
+        h2 {
+            font-family: $font-family;
+            font-size: 3em;
+            color: $clr-white;
+            font-weight: bold;
+            width: 470px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        p {
+            font-family: $font-family;
+            font-size: $font-size;
+            color: $clr-white;
+            margin-bottom: 20px;
+            width: 480px;
+            text-align: center;
+        }
+
+        button {
+            font-size: 1.2em;
+            font-weight: bold;
+            border: none;
+            color: $clr-primary;
+            background-color: $clr-white;
+            cursor: pointer;
+            height: 50px;
+            width: 170px;
+            border-radius: 6px;
+            font-weight: semi-bold;
+            margin-right: 20px;
+        }
+    }
+}

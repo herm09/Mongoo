@@ -1,0 +1,136 @@
+.menuMiam {
+    display: block;
+    background-image: url('img/pattern.png');
+    height: 135vh;
+    justify-content: center;
+    align-items: center;
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 900px;
+        height: 150px;
+        gap: 50px;
+        padding: 70px;
+
+        h2 {
+            font-size: 3em;
+            font-family: $font-family;
+            color: $clr-primary;
+            font-weight: bold;
+        }
+
+        p {
+            font-family: $font-family;
+            font-size: $font-size;
+            color: $clr-grey;
+            text-align: center;
+        }
+    }
+
+    .grille {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        padding-top: 30px;
+               
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            width: 400px;
+            gap: 60px;
+
+            :nth-child(3n) {
+                border: 2px solid $clr-primary;
+                padding: 10px;
+              }
+
+            .salade {
+                font-size: $font-size;
+                font-family: $font-family;
+                color: $clr-grey;
+
+                .prix {
+                    display: flex;
+                    justify-content: space-between;
+                    color: $clr-primary;
+                    
+    
+                    h3 {
+                        display: flex;
+                        font-size: 1.2em;
+                        font-family: $font-family;
+                        font-weight: bold;
+                    }
+    
+                    p {
+                        display: flex;
+                        font-size: 1em;
+                        font-family: $font-family;
+                        justify-content: flex-end;
+                        font-weight: semi-bold;
+                    }
+                }
+            }
+            
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            width: 430px;
+            gap: 60px;
+            font-family: $font-family;
+                   
+            .vert {
+                font-size: 2em;
+                font-family: $font-family;
+                color: $clr-primary;
+                font-size: 3em;
+                rotate: -10deg;
+            }
+
+            .bleu {
+                font-size: 2em;
+                font-family: $font-family;
+                color: $clr-blue;
+                font-size: 3em;
+                rotate: -10deg;
+            }
+
+            p {
+                font-size: $font-size;
+                font-family: $font-family;
+                color: $clr-grey;
+                text-align: center;
+                margin-top: 30px;
+            }
+
+            button {
+                font-size: 1.2em;
+                font-weight: bold;
+                border: none;
+                color: $clr-white;
+                background-color: $clr-primary;
+                cursor: pointer;
+                height: 50px;
+                width: 260px;
+                border-radius: 6px;
+                font-weight: semi-bold;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    
+}

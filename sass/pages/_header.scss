@@ -1,0 +1,78 @@
+header {
+    background-image: url('img/header.png');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    header::after {
+        content: " ";
+        z-index: 10;
+        display: block;
+        background-image: url('img/opacity_overlay.png');
+    }
+
+    .menu {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            height: 69px;
+            width: 200px;
+            padding: 20px;
+        }
+
+        ul {
+            display: flex;
+            gap: 50px;
+            color: $clr-white;
+            font-family: $font-family;
+        }
+
+        button {
+            font-size: 15px;
+            border: none;
+            color: $clr-primary;
+            cursor: pointer;
+            height: 40px;
+            width: 140px;
+            border-radius: 6px;
+            font-weight: semi-bold;
+            margin-right: 20px;
+        }
+    }
+
+    .tagline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 70%;
+        color: $clr-white;
+        font-family: $font-family;
+        text-align: center;
+
+        h2 {
+            margin-bottom: 20px;
+            font-family: $font-family;
+            font-size: 7em;
+        }
+
+        .rotate {
+            rotate: -20deg;
+            font-family: $font-family;
+            font-style: italic;
+            font-size: 2.3em;
+        }
+    }
+
+    .socialLinks {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-right: 20px;
+    }
+}

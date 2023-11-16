@@ -194,6 +194,7 @@ header .socialLinks {
   background-size: cover;
   height: 110vh;
   padding: auto;
+  padding-top: 130px;
 }
 .accroche .preparation {
   display: flex;

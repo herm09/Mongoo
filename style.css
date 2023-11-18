@@ -436,4 +436,117 @@ header .socialLinks {
   text-align: center;
 }
 
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("img/bg_repeat.png");
+  padding: 40px;
+}
+.form img {
+  height: 400px;
+  width: 400px;
+  padding: 20px;
+}
+.form .partage {
+  display: flex;
+  flex-direction: column;
+}
+.form .partage h2 {
+  font-size: 2.4em;
+  font-weight: bold;
+  color: #B2D234;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+.form .partage p {
+  font-size: 1em;
+  color: #606060;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  width: 350px;
+}
+.form .partage .formulaire {
+  display: flex;
+  flex-direction: column;
+}
+.form .partage .formulaire .form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.form .partage .formulaire .form-row label {
+  color: #B2D234;
+  margin-right: 10px;
+  font-family: "Poppins", sans-serif;
+  align-self: flex-start;
+  font-style: italic;
+}
+.form .partage .formulaire .form-row input {
+  width: calc(50% - 5px);
+}
+.form .partage .formulaire label {
+  color: #B2D234;
+  margin-right: 10px;
+  font-family: "Poppins", sans-serif;
+  align-self: flex-start;
+  font-style: italic;
+  font-size: 18px;
+}
+.form .partage .formulaire .submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 5px;
+  background-color: #B2D234;
+  font-size: 1.2em;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.footer {
+  display: flex;
+  background-color: #B2D234;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.footer img {
+  height: 69px;
+  width: 200px;
+  padding: 20px;
+}
+.footer .commander, .footer .informations, .footer .retrouver {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+.footer .commander h3, .footer .informations h3, .footer .retrouver h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.footer .commander ul, .footer .informations ul, .footer .retrouver ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer .commander ul li, .footer .informations ul li, .footer .retrouver ul li {
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
 /*# sourceMappingURL=style.css.map */

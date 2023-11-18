@@ -1,0 +1,87 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('img/bg_repeat.png');
+    padding: 40px;
+
+    img {
+        height: 400px;
+        width: 400px;
+        padding: 20px;
+    }
+
+    .partage {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-size: 2.4em;
+            font-weight: bold;
+            color: $clr-primary;
+            margin-bottom: 20px;
+            font-family: $font-family;
+        }
+
+        p {
+            font-size: 1em;
+            color: $clr-grey;
+            margin-bottom: 20px;
+            font-family: $font-family;
+            width: 350px;
+        }
+
+        .formulaire {
+            display: flex;
+            flex-direction: column;
+
+            .form-row {
+                display: flex;
+                justify-content: space-between;
+                align-items: center; // Ajout de cette ligne pour aligner verticalement le contenu
+                width: 100%;
+
+                label {
+                    color: $clr-primary;
+                    margin-right: 10px;
+                    font-family: $font-family;
+                    align-self: flex-start;
+                    font-style: italic;
+                }
+
+                input {
+                    width: calc(50% - 5px);
+                }
+            }
+
+            label {
+                color: $clr-primary;
+                margin-right: 10px;
+                font-family: $font-family;
+                align-self: flex-start;
+                font-style: italic;
+                font-size: $font-size;
+            }
+
+            .submit {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 200px;
+                height: 50px;
+                margin-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                border: none;
+                border-radius: 5px;
+                background-color: $clr-primary;
+                font-size: 1.2em;
+                font-family: $font-family;
+                color: $clr-white;
+            }
+        }
+    }
+}
